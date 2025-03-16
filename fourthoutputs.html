@@ -1,0 +1,208 @@
+
+
+
+<html>
+<head>
+    <script type="text/javascript">
+        function show_alert() {
+            alert("Hello there :D");
+        }
+function checkItem() {
+            var item = document.frmItem.cmbItem.value;
+            switch (item) {
+                case "1": alert("Queen");
+                    break;
+                case "2": alert("Tiffany");
+                    break;
+                case "3": alert("The Proclaimers");
+                    break;
+                case "4": alert("The Beatles");
+                    break;
+                default: alert("Unknown Item");
+            }
+        }
+   function add() {
+            var A = Number(document.example.firstno.value);
+            var B = Number(document.example.secondno.value);
+            var C = Number(document.example.thirdno.value);
+            var sum = A + B + C;
+            document.example.sumno.value = sum;
+        }
+        function runLoop() {
+            var x = 0;
+            var output = "";
+            do {
+                output += x + "<br/>";
+                x++;
+            } while (x < 10);
+            output += "Explode AAAAA!";
+            document.getElementById("loopOutput").innerHTML = output;
+        }
+    </script>
+<link rel="icon" href="muffin.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>4th Quarter</title>
+
+    <style>
+        @font-face {
+            font-family: 'GhostKidAOEPro';
+            src: url('GhostKidAOE_Pro.otf') format('opentype'),
+                 url('GhostKidAOE_Pro.ttf') format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'Poppins';
+            src: url('Poppins-Bold.ttf') format('truetype');
+            src: url('Poppins-Regular.
+ttf') format('truetype');
+
+        body {
+            background-image: url('notebook.png.');
+            background-repeat: no-repeat;
+ background-attachment: fixed;
+        }
+
+        .header-link {
+            font-family: 'Poppins';
+            font-size: 16px; 
+            color: black; 
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body background="notebook.png" onload="runLoop()">
+<header id="header" class="header">
+    <div class="max-w-container w-1715 prel">
+        <div class="content-wrap prel">
+            <a href="index.html">
+                <img width="422" height="85" class="logo-img b-lazy b-loaded" alt="Ict Portfolio.com" src="LogoHeader.png">
+            </a>
+
+            <div class="header-links-col">
+                <ul class="header-links-main c-black txt-25-b lh-1 ltr-spc-pos-0_5">
+                    <li class="header-link-item">
+                        <a href="diary.html" class="header-link"> Diary </a>
+                    </li>
+                    <li class="header-link-item">
+                        <a href="browser_outputs.html" class="header-link"> Browser Outputs </a>
+                    </li>
+                    <li class="header-link-item">
+                        <a href="about_me.html" class="header-link"> Get to Know Yvia </a>
+                    </li>
+                    <li class="header-link-item">
+                        <a href="reflection.html" class="header-link"> Reflection </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="color: #c7987d; text-align: center; font-family: 'GhostKidAOEPro'; font-size: 50px;">Browser Outputs!</p>
+
+<p style="text-align:center;">
+Below are the codes and browser outputs of the following lessons:</p>
+   <ol style="margin-left: 500px;">
+        <li>Events</li>
+        <li>Conditional Statements</li>
+        <li>Switch Statements</li>
+        <li>Loops</li>
+  </ol>
+</p> 
+<br>
+<p align="center">
+<audio controls autoplay><source src="car.mp3"></audio> </p>
+<hr style="width:30%; margin: auto; background-color: black; border: none; height: 2px;">
+<br>
+<br>
+<br>
+
+<p align="center" style="font-family: 'GhostKidAOEPro'; font-size: 45;">Lesson 1: Events</p>
+<table border="1" align="center" style="border-collapse: collapse; width: 70%; margin-left: 250px;">
+    <tr>
+        <td style="padding: 30px; font-size:50px;"> Alert Box </td>
+        <td style="padding: 0;">
+            <img src="lesson1.png" alt="Alert Box" width="500px" height="500px">
+        </td>
+        <td style="padding: 30px; text-align: center;">
+            <input type="button" onclick="show_alert()" value="CLICK MEE!!!"/>
+        </td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+<p align="center" style="font-family: 'GhostKidAOEPro'; font-size: 45;">Lesson 2: Conditional Statements</p>
+<table border="1" align="center" style="border-collapse: collapse; width: 70%; margin-left: 250px;">
+    <tr>
+        <td style="padding: 30px; font-size:35px;"> Switch Statement</td>
+        <td style="padding: 0;">
+            <img src="lesson2.png" alt="Switch Statement" width="1000px" height="1000px">
+        </td>
+        <td style="padding: 30px; text-align: center;">
+            <p>Select a song below to see who made it</p><br>
+            <form name="frmItem">
+                <select name="cmbItem">
+                    <option value="1">Don't Stop Me Now</option>
+                    <option value="2">I Think We're Alone Now</option>
+                    <option value="3">I'm Gonna Be (500 Miles)</option>
+                    <option value="4">When I'm Sixty Four</option>
+                </select><br><br>
+                <input type="button" name="combo" value="SUBMIT" onClick="checkItem()">
+            </form>
+        </td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+<p align="center" style="font-family: 'GhostKidAOEPro'; font-size: 45;">Lesson 3: Switch Statements</p>
+<table border="1" align="center" style="border-collapse: collapse; width: 70%; margin-left: 250px;">
+    <tr>
+        <td style="padding: 30px; font-size:30px;"> Addition Calculator (Function)</td>
+        <td style="padding: 0;">
+            <img src="lesson3.png" alt="Elements Code" width="1500px" height="1500px">
+        </td>
+        <td style="padding: 30px; text-align: center;">
+            <form name="example">
+                <p>First <input type="text" name="firstno" value=""></p>+
+                <p>Second <input type="text" name="secondno" value=""></p>+
+                <p>Third <input type="text" name="thirdno" value=""></p>=
+                <p><input type="text" name="sumno" value="" readonly></p>
+<br>
+                <p><input type="button" name="addno" value="Submit" onclick="add()"></p>
+            </form>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+
+<p align="center" style="font-family: 'GhostKidAOEPro'; font-size: 45;">Lesson 4: Loops</p>
+<table border="1" align="center" style="border-collapse: collapse; width: 70%; margin-left: 250px;">
+    <tr>
+        <td style="padding: 30px; font-size:40px;"> Do While Loop </td>
+        <td style="padding: 0;">
+            <img src="lesson4.png" alt="Lesson 5 Code" width="500px" height="500px">
+        </td>
+        <td style="padding: 30px; text-align: center; width: 40%;">
+            <div id="loopOutput"></div>
+        </td>
+    </tr>
+</table>
+
+<br><br><br><br><br>
+
+<p style="text-align: center; font-family: font-size: 20px;">psst! click the "<u>Ict Portfolio.com</u>" logo on the top left to go back to the homepage :-D</p>
+
+<br>
+
+</body>
+</html>
